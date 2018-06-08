@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  background-image: url(./assets/img/pexels-photo-574283.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.circle-img {
+  border-radius: 50%;
+}

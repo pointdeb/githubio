@@ -1,0 +1,22 @@
+@media (min-width: 500px) {
+  .xuser {
+      width: 500px;
+      height: 290px;
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      margin-left: -250px;
+      margin-top: -145px;
+  }
+}
+
+@media (max-width: 500px) {
+  .xuser {
+      width: 90%;
+      min-width: 200px;
+      margin: 0 auto;
+      top: 2px;
+      bottom: 2px;
+      position: relative;
+  }
+}
