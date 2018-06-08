@@ -1,3 +1,4 @@
 <div class="xuser">
-  <app-user-card></app-user-card>
+  <app-user-card [user]="user" *ngIf="user" ></app-user-card>
+  <div *ngIf="!user" style="text-align: center;">Loading...</div>
 </div>

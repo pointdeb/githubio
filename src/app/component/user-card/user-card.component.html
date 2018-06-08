@@ -1,19 +1,16 @@
-<div class="xcard text-center">
+<div class="xcard text-center" [@flyInOut]="'in'">
   <div class="xcard-header">
-      <h3>Stephano Romain</h3>
-      <h5>MOHAMADY</h5>
+      <h3>{{ user.firstName }}</h3>
+      <h5>{{ user.lastName }}</h5>
   </div>
   <div class="xcard-img">
       <img class="circle-img" src="../../../assets/img/user.JPG" alt="">
   </div>
   <div class="xcard-body">
-      <p>Just share and get from each others.</p>
+      <p> {{ user.slogan }} </p>
   </div>
   <hr class="xcard-divider">
   <div class="xcard-footer">
-      <a href="https://github.com/pointdeb" target="_blank" role="button" title="github" class="xbtn btn-outline-secondary btn-sm"><i class="fa fa-github"></i></a>
-      <a href="https://www.facebook.com/developer.mg" target="_blank" role="button" title="facebook" class="xbtn btn-outline-secondary btn-sm"><i class="fa fa-facebook-square"></i></a>
-      <a href="skype:stephano.romain?chat" target="_blank" role="button" title="skype" class="xbtn btn-outline-secondary btn-sm"><i class="fa fa-skype"></i></a>
-      <a href="https://www.linkedin.com/in/stephano-romain-m-2672a3135/" target="_blank" role="button" title="linkedin" target="_blank" class="xbtn btn-outline-secondary btn-sm"><i class="fa fa-linkedin"></i></a>
+      <a *ngFor="let contact of user.contacts"  [href]="sanitize(contact.link)" target="_blank" role="button" [title]="contact.title" class="xbtn btn-outline-secondary btn-sm"><i [ngClass]="contact.icon"></i></a>
   </div>
 </div>
