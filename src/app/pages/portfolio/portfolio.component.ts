@@ -17,7 +17,7 @@ export class PortfolioComponent implements OnInit {
       this.user = {
         firstName: 'Stephano Romain',
         lastName: 'MOHAMADY',
-        picture: '../../../assets/img/user.JPG',
+        picture: 'assets/img/user.JPG',
         slogan: 'Just share and get from each other.',
         contacts: [
           { link: 'https://github.com/pointdeb', icon: 'fa fa-github', title: 'What I have done ...' },
