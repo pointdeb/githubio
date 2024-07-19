@@ -18,10 +18,10 @@ export class PortfolioComponent implements OnInit {
         firstName: 'Stephano Romain',
         lastName: 'MOHAMADY',
         picture: 'assets/img/user.JPG',
-        slogan: 'Just share and get from each other.',
+        slogan: 'Just share and get in touch with me.',
         contacts: [
           { link: 'https://github.com/pointdeb', icon: 'fa fa-github', title: 'What I have done ...' },
-          { link: 'https://www.facebook.com/developer.mg', icon: 'fa fa-facebook-square', title: 'facebook' },
+          { link: 'https://www.facebook.com/', icon: 'fa fa-facebook-square', title: 'facebook' },
           { link: 'skype:stephano.romain?chat', icon: 'fa fa-skype', title: 'Skype' },
           { link: 'https://www.linkedin.com/in/stephano-romain-m-2672a3135/', icon: 'fa fa-linkedin', title: 'Linkedin' }
         ]
